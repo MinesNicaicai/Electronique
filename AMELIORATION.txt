@@ -1,0 +1,5 @@
+Fonctions rajoutées:
+
+1. Choix pour changer la vitesse de tombée, soit 1/sec soit 2/sec.
+
+2. Bouton pour faire tomber directement la brique sur la pile.

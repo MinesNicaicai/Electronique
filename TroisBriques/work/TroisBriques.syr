@@ -1,0 +1,1291 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: TroisBriques.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "TroisBriques.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "TroisBriques"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-cp132
+
+---- Source Options
+Top Module Name                    : TroisBriques
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "../Digit.v" in library work
+Compiling verilog file "../Number.v" in library work
+Module <Digit> compiled
+Compiling verilog file "../Button.v" in library work
+Module <Number> compiled
+Compiling verilog file "../VGA.v" in library work
+Module <Button> compiled
+Compiling verilog file "../score.v" in library work
+Module <Vga> compiled
+Compiling verilog file "../rgb.v" in library work
+Module <Score> compiled
+Compiling verilog file "../Pile.v" in library work
+Module <Rgb> compiled
+Compiling verilog file "../Pesanteur.v" in library work
+Module <Pile> compiled
+Compiling verilog file "../Manette.v" in library work
+Module <Pesanteur> compiled
+Compiling verilog file "../Cadre.v" in library work
+Module <Manette> compiled
+Compiling verilog file "../Brique.v" in library work
+Module <Cadre> compiled
+Compiling verilog file "../BaseDeTemps.v" in library work
+Module <Brique> compiled
+Compiling verilog file "../TroisBriques.v" in library work
+Module <BaseDeTemps> compiled
+Module <TroisBriques> compiled
+No errors in compilation
+Analysis of file <"TroisBriques.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <TroisBriques> in library <work>.
+
+Analyzing hierarchy for module <BaseDeTemps> in library <work> with parameters.
+	NB_TIC = "00000000000000000000000000000010"
+	NB_TIC1 = "00000000000000000000100111000100"
+	NB_TIC2_df1 = "00000010111110101111000010000000"
+	NB_TIC2_df2 = "00000001011111010111100001000000"
+	SIZE_CPT = "00000000000000000000000000000010"
+	SIZE_CPT1 = "00000000000000000000000000001100"
+	SIZE_CPT2_df1 = "00000000000000000000000000011010"
+	SIZE_CPT2_df2 = "00000000000000000000000000011001"
+
+Analyzing hierarchy for module <Vga> in library <work> with parameters.
+	HAUTEUR_ECRAN = "00000000000000000000000111100000"
+	HAUTEUR_TOTAL = "00000000000000000000001000001001"
+	LARGEUR_ECRAN = "00000000000000000000001010000000"
+	LARGEUR_TOTAL = "00000000000000000000001100100000"
+
+Analyzing hierarchy for module <Rgb> in library <work>.
+
+Analyzing hierarchy for module <Cadre> in library <work>.
+
+Analyzing hierarchy for module <Score> in library <work>.
+
+Analyzing hierarchy for module <Brique> in library <work> with parameters.
+	COULEUR_BRIQUE = "00000000000000000000000000011001"
+	HAUTEUR_BRIQUE = "00000000000000000000000001010000"
+	HAUTEUR_ECRAN = "00000000000000000000000111100000"
+	INTERVALLE_BRIQUE = "00000000000000000000000000000001"
+	LARGEUR_BRIQUE = "00000000000000000000000011010010"
+	LARGEUR_ECRAN = "00000000000000000000001010000000"
+
+Analyzing hierarchy for module <Pile> in library <work>.
+
+Analyzing hierarchy for module <Manette> in library <work> with parameters.
+	LARGEUR_BRIQUE = "00000000000000000000000011010010"
+	LARGEUR_ECRAN = "00000000000000000000001010000000"
+
+Analyzing hierarchy for module <Pesanteur> in library <work> with parameters.
+	CouleurCentre = "00000000000000000000000000001101"
+	CouleurDroite = "00000000000000000000000000011000"
+	CouleurGauche = "00000000000000000000000000000010"
+	HAUTEUR_BRIQUE = "00000000000000000000000001010000"
+	HAUTEUR_ECRAN = "00000000000000000000000111100000"
+	LARGEUR_BRIQUE = "00000000000000000000000011010010"
+	LARGEUR_ECRAN = "00000000000000000000001010000000"
+	MaxHauteur = "00000000000000000000000000000110"
+
+Analyzing hierarchy for module <Number> in library <work>.
+
+Analyzing hierarchy for module <Button> in library <work> with parameters.
+	PRESS_DETECTED = "00000000000000000000000000000001"
+	WAITING_PRESS = "00000000000000000000000000000000"
+	WAITING_RELEASE = "00000000000000000000000000000010"
+
+Analyzing hierarchy for module <Digit> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <TroisBriques>.
+Module <TroisBriques> is correct for synthesis.
+ 
+Analyzing module <BaseDeTemps> in library <work>.
+	NB_TIC = 32'sb00000000000000000000000000000010
+	NB_TIC1 = 32'sb00000000000000000000100111000100
+	NB_TIC2_df1 = 32'sb00000010111110101111000010000000
+	NB_TIC2_df2 = 32'sb00000001011111010111100001000000
+	SIZE_CPT = 32'sb00000000000000000000000000000010
+	SIZE_CPT1 = 32'sb00000000000000000000000000001100
+	SIZE_CPT2_df1 = 32'sb00000000000000000000000000011010
+	SIZE_CPT2_df2 = 32'sb00000000000000000000000000011001
+Module <BaseDeTemps> is correct for synthesis.
+ 
+Analyzing module <Vga> in library <work>.
+	HAUTEUR_ECRAN = 32'sb00000000000000000000000111100000
+	HAUTEUR_TOTAL = 32'sb00000000000000000000001000001001
+	LARGEUR_ECRAN = 32'sb00000000000000000000001010000000
+	LARGEUR_TOTAL = 32'sb00000000000000000000001100100000
+Module <Vga> is correct for synthesis.
+ 
+Analyzing module <Rgb> in library <work>.
+	Calling function <sortieRouge>.
+	Calling function <sortieVert>.
+	Calling function <sortieBleu>.
+	Calling function <sortieRouge>.
+	Calling function <sortieVert>.
+	Calling function <sortieBleu>.
+	Calling function <sortieRouge>.
+	Calling function <sortieVert>.
+	Calling function <sortieBleu>.
+Module <Rgb> is correct for synthesis.
+ 
+Analyzing module <Cadre> in library <work>.
+Module <Cadre> is correct for synthesis.
+ 
+Analyzing module <Score> in library <work>.
+Module <Score> is correct for synthesis.
+ 
+Analyzing module <Number> in library <work>.
+Module <Number> is correct for synthesis.
+ 
+Analyzing module <Digit> in library <work>.
+Module <Digit> is correct for synthesis.
+ 
+Analyzing module <Button> in library <work>.
+	PRESS_DETECTED = 32'sb00000000000000000000000000000001
+	WAITING_PRESS = 32'sb00000000000000000000000000000000
+	WAITING_RELEASE = 32'sb00000000000000000000000000000010
+Module <Button> is correct for synthesis.
+ 
+Analyzing module <Brique> in library <work>.
+	COULEUR_BRIQUE = 32'sb00000000000000000000000000011001
+	HAUTEUR_BRIQUE = 32'sb00000000000000000000000001010000
+	HAUTEUR_ECRAN = 32'sb00000000000000000000000111100000
+	INTERVALLE_BRIQUE = 32'sb00000000000000000000000000000001
+	LARGEUR_BRIQUE = 32'sb00000000000000000000000011010010
+	LARGEUR_ECRAN = 32'sb00000000000000000000001010000000
+WARNING:Xst:905 - "../Brique.v" line 36: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <row>, <col>
+Module <Brique> is correct for synthesis.
+ 
+Analyzing module <Pile> in library <work>.
+Module <Pile> is correct for synthesis.
+ 
+Analyzing module <Manette> in library <work>.
+	LARGEUR_BRIQUE = 32'sb00000000000000000000000011010010
+	LARGEUR_ECRAN = 32'sb00000000000000000000001010000000
+Module <Manette> is correct for synthesis.
+ 
+Analyzing module <Pesanteur> in library <work>.
+	CouleurCentre = 32'sb00000000000000000000000000001101
+	CouleurDroite = 32'sb00000000000000000000000000011000
+	CouleurGauche = 32'sb00000000000000000000000000000010
+	HAUTEUR_BRIQUE = 32'sb00000000000000000000000001010000
+	HAUTEUR_ECRAN = 32'sb00000000000000000000000111100000
+	LARGEUR_BRIQUE = 32'sb00000000000000000000000011010010
+	LARGEUR_ECRAN = 32'sb00000000000000000000001010000000
+	MaxHauteur = 32'sb00000000000000000000000000000110
+Module <Pesanteur> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <blank<0>> in unit <Score> has a constant value of 0 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <BaseDeTemps>.
+    Related source file is "../BaseDeTemps.v".
+    Found 1-bit register for signal <tombeeBrique>.
+    Found 2-bit up counter for signal <cpt>.
+    Found 12-bit up counter for signal <cpt1>.
+    Found 26-bit up counter for signal <cpt2>.
+    Found 3-bit up counter for signal <diff>.
+    Summary:
+	inferred   4 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <BaseDeTemps> synthesized.
+
+
+Synthesizing Unit <Vga>.
+    Related source file is "../VGA.v".
+    Found 11-bit up counter for signal <Hcompteur>.
+    Found 11-bit comparator greatequal for signal <Hcompteur$cmp_ge0000> created at line 42.
+    Found 11-bit subtractor for signal <Hpos$addsub0000> created at line 63.
+    Found 11-bit comparator greatequal for signal <Hpos$cmp_ge0000> created at line 63.
+    Found 11-bit comparator less for signal <Hpos$cmp_lt0000> created at line 63.
+    Found 11-bit comparator less for signal <Hsync$cmp_lt0000> created at line 55.
+    Found 11-bit up counter for signal <Vcompteur>.
+    Found 11-bit comparator greatequal for signal <Vcompteur$cmp_ge0000> created at line 47.
+    Found 11-bit comparator less for signal <Vcompteur$cmp_lt0000> created at line 42.
+    Found 11-bit subtractor for signal <Vpos$addsub0000> created at line 64.
+    Found 11-bit comparator greatequal for signal <Vpos$cmp_ge0000> created at line 64.
+    Found 11-bit comparator less for signal <Vpos$cmp_lt0000> created at line 64.
+    Found 11-bit comparator less for signal <Vsync$cmp_lt0000> created at line 58.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   9 Comparator(s).
+Unit <Vga> synthesized.
+
+
+Synthesizing Unit <Rgb>.
+    Related source file is "../rgb.v".
+WARNING:Xst:646 - Signal <sortieVert/3/sortieVert<31:3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <sortieVert/2/sortieVert<31:3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <sortieVert/1/sortieVert<31:3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <sortieRouge/3/sortieRouge<31:3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <sortieRouge/2/sortieRouge<31:3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <sortieRouge/1/sortieRouge<31:3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <sortieBleu/3/sortieBleu<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <sortieBleu/2/sortieBleu<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <sortieBleu/1/sortieBleu<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:737 - Found 32-bit latch for signal <sortieRouge/1/sortieRouge>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <sortieVert/1/sortieVert>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <sortieRouge/2/sortieRouge>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <sortieVert/2/sortieVert>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <sortieRouge/3/sortieRouge>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <sortieVert/3/sortieVert>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <sortieBleu/1/sortieBleu>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 32-bit latch for signal <sortieBleu/2/sortieBleu>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 32-bit latch for signal <sortieBleu/3/sortieBleu>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 5-bit comparator greater for signal <sortieRouge$cmp_gt0000> created at line 17.
+    Found 5-bit comparator greater for signal <sortieRouge$cmp_gt0001> created at line 17.
+    Found 5-bit comparator greater for signal <sortieRouge$cmp_gt0002> created at line 17.
+    Found 5-bit comparator lessequal for signal <sortieRouge$cmp_le0000> created at line 17.
+    Found 5-bit comparator greatequal for signal <sortieRouge$cmp_le0001> created at line 19.
+    Found 5-bit comparator lessequal for signal <sortieRouge$cmp_le0002> created at line 19.
+    Found 5-bit comparator greatequal for signal <sortieRouge$cmp_le0003> created at line 18.
+    Found 5-bit comparator lessequal for signal <sortieRouge$cmp_le0004> created at line 18.
+    Found 5-bit comparator lessequal for signal <sortieRouge$cmp_le0005> created at line 17.
+    Found 5-bit comparator greatequal for signal <sortieRouge$cmp_le0006> created at line 19.
+    Found 5-bit comparator lessequal for signal <sortieRouge$cmp_le0007> created at line 19.
+    Found 5-bit comparator greatequal for signal <sortieRouge$cmp_le0008> created at line 18.
+    Found 5-bit comparator lessequal for signal <sortieRouge$cmp_le0009> created at line 18.
+    Found 5-bit comparator lessequal for signal <sortieRouge$cmp_le0010> created at line 17.
+    Found 5-bit comparator greatequal for signal <sortieRouge$cmp_le0011> created at line 19.
+    Found 5-bit comparator lessequal for signal <sortieRouge$cmp_le0012> created at line 19.
+    Found 5-bit comparator greatequal for signal <sortieRouge$cmp_le0013> created at line 18.
+    Found 5-bit comparator lessequal for signal <sortieRouge$cmp_le0014> created at line 18.
+    Found 5-bit comparator lessequal for signal <sortieVert$cmp_le0000> created at line 25.
+    Found 5-bit comparator lessequal for signal <sortieVert$cmp_le0001> created at line 25.
+    Found 5-bit comparator lessequal for signal <sortieVert$cmp_le0002> created at line 25.
+    Found 5-bit comparator greatequal for signal <sortieVert$cmp_le0003> created at line 27.
+    Found 5-bit comparator greatequal for signal <sortieVert$cmp_le0004> created at line 27.
+    Found 5-bit comparator greatequal for signal <sortieVert$cmp_le0005> created at line 27.
+    Found 5-bit comparator greatequal for signal <sortieVert$cmp_le0006> created at line 26.
+    Found 5-bit comparator lessequal for signal <sortieVert$cmp_le0007> created at line 26.
+    Found 5-bit comparator greatequal for signal <sortieVert$cmp_le0008> created at line 26.
+    Found 5-bit comparator lessequal for signal <sortieVert$cmp_le0009> created at line 26.
+    Found 5-bit comparator greatequal for signal <sortieVert$cmp_le0010> created at line 26.
+    Found 5-bit comparator lessequal for signal <sortieVert$cmp_le0011> created at line 26.
+    Found 5-bit comparator lessequal for signal <sortieVert$cmp_le0012> created at line 25.
+    Found 5-bit comparator lessequal for signal <sortieVert$cmp_le0013> created at line 25.
+    Found 5-bit comparator lessequal for signal <sortieVert$cmp_le0014> created at line 25.
+    Found 5-bit comparator greatequal for signal <sortieVert$cmp_le0015> created at line 27.
+    Found 5-bit comparator greatequal for signal <sortieVert$cmp_le0016> created at line 27.
+    Found 5-bit comparator greatequal for signal <sortieVert$cmp_le0017> created at line 27.
+    Found 5-bit comparator greatequal for signal <sortieVert$cmp_le0018> created at line 26.
+    Found 5-bit comparator lessequal for signal <sortieVert$cmp_le0019> created at line 26.
+    Found 5-bit comparator greatequal for signal <sortieVert$cmp_le0020> created at line 26.
+    Found 5-bit comparator lessequal for signal <sortieVert$cmp_le0021> created at line 26.
+    Found 5-bit comparator greatequal for signal <sortieVert$cmp_le0022> created at line 26.
+    Found 5-bit comparator lessequal for signal <sortieVert$cmp_le0023> created at line 26.
+    Found 5-bit comparator lessequal for signal <sortieVert$cmp_le0024> created at line 25.
+    Found 5-bit comparator lessequal for signal <sortieVert$cmp_le0025> created at line 25.
+    Found 5-bit comparator lessequal for signal <sortieVert$cmp_le0026> created at line 25.
+    Found 5-bit comparator greatequal for signal <sortieVert$cmp_le0027> created at line 27.
+    Found 5-bit comparator greatequal for signal <sortieVert$cmp_le0028> created at line 27.
+    Found 5-bit comparator greatequal for signal <sortieVert$cmp_le0029> created at line 27.
+    Found 5-bit comparator greatequal for signal <sortieVert$cmp_le0030> created at line 26.
+    Found 5-bit comparator lessequal for signal <sortieVert$cmp_le0031> created at line 26.
+    Found 5-bit comparator greatequal for signal <sortieVert$cmp_le0032> created at line 26.
+    Found 5-bit comparator lessequal for signal <sortieVert$cmp_le0033> created at line 26.
+    Found 5-bit comparator greatequal for signal <sortieVert$cmp_le0034> created at line 26.
+    Found 5-bit comparator lessequal for signal <sortieVert$cmp_le0035> created at line 26.
+    Summary:
+	inferred  54 Comparator(s).
+Unit <Rgb> synthesized.
+
+
+Synthesizing Unit <Cadre>.
+    Related source file is "../Cadre.v".
+    Found 11-bit comparator lessequal for signal <couleur$cmp_le0000> created at line 27.
+    Found 11-bit comparator greatequal for signal <couleur$cmp_le0001> created at line 27.
+    Found 11-bit comparator lessequal for signal <couleur$cmp_le0002> created at line 27.
+    Found 11-bit comparator greatequal for signal <couleur$cmp_le0003> created at line 30.
+    Found 11-bit comparator lessequal for signal <couleur$cmp_le0004> created at line 30.
+    Summary:
+	inferred   5 Comparator(s).
+Unit <Cadre> synthesized.
+
+
+Synthesizing Unit <Brique>.
+    Related source file is "../Brique.v".
+    Found 4x9-bit multiplier for signal <$mult0000> created at line 37.
+    Found 4x9-bit multiplier for signal <$mult0001> created at line 37.
+    Found 11-bit adder carry out for signal <add0000$addsub0001> created at line 37.
+    Found 2-bit adder carry out for signal <add0000$addsub0002> created at line 37.
+    Found 3x8-bit multiplier for signal <add0000$mult0000> created at line 37.
+    Found 10-bit adder carry out for signal <couleur$addsub0001> created at line 37.
+    Found 14-bit comparator greatequal for signal <couleur$cmp_ge0000> created at line 37.
+    Found 11-bit comparator greatequal for signal <couleur$cmp_ge0001> created at line 37.
+    Found 14-bit comparator less for signal <couleur$cmp_lt0000> created at line 37.
+    Found 12-bit comparator less for signal <couleur$cmp_lt0001> created at line 37.
+    Found 2x8-bit multiplier for signal <couleur$mult0000> created at line 37.
+    Found 4-bit adder for signal <mult0000$addsub0000> created at line 37.
+    Found 4-bit adder for signal <mult0001$addsub0000> created at line 37.
+    Summary:
+	inferred   5 Adder/Subtractor(s).
+	inferred   4 Multiplier(s).
+	inferred   4 Comparator(s).
+Unit <Brique> synthesized.
+
+
+Synthesizing Unit <Pile>.
+    Related source file is "../Pile.v".
+    Found 3-bit adder for signal <old_regHauteur_2$addsub0000> created at line 41.
+    Found 3-bit comparator less for signal <old_regHauteur_2$cmp_lt0000> created at line 40.
+    Found 3-bit register for signal <regHauteur>.
+    Found 3-bit subtractor for signal <regHauteur$addsub0000> created at line 48.
+    Found 3-bit comparator greater for signal <regHauteur$cmp_gt0000> created at line 47.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <Pile> synthesized.
+
+
+Synthesizing Unit <Manette>.
+    Related source file is "../Manette.v".
+    Found finite state machine <FSM_0> for signal <regCol>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 27                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | regCol$not0000            (positive)           |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Power Up State     | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <pressed>.
+    Found 3-bit comparator greatequal for signal <regCol$cmp_ge0000> created at line 59.
+    Found 3-bit comparator greatequal for signal <regCol$cmp_ge0001> created at line 57.
+    Found 3-bit comparator greatequal for signal <regCol$cmp_ge0002> created at line 64.
+    Found 3-bit comparator less for signal <regCol$cmp_lt0000> created at line 59.
+    Found 3-bit comparator less for signal <regCol$cmp_lt0001> created at line 57.
+    Found 3-bit comparator less for signal <regCol$cmp_lt0002> created at line 64.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+Unit <Manette> synthesized.
+
+
+Synthesizing Unit <Pesanteur>.
+    Related source file is "../Pesanteur.v".
+    Found 3-bit register for signal <Row>.
+    Found 5-bit register for signal <Couleur>.
+    Found 1-bit register for signal <PlusDroite>.
+    Found 1-bit register for signal <Aligne>.
+    Found 1-bit register for signal <Perdu>.
+    Found 1-bit register for signal <PlusGauche>.
+    Found 1-bit register for signal <PlusCentre>.
+    Found 3x8-bit multiplier for signal <$mult0000> created at line 83.
+    Found 3x8-bit multiplier for signal <$mult0001> created at line 87.
+    Found 3x8-bit multiplier for signal <$mult0002> created at line 91.
+    Found 13-bit adder for signal <$sub0000> created at line 83.
+    Found 13-bit adder for signal <$sub0001> created at line 87.
+    Found 13-bit adder for signal <$sub0002> created at line 91.
+    Found 3-bit adder carry out for signal <add0000$addsub0000> created at line 115.
+    Found 3-bit adder carry out for signal <add0001$addsub0000> created at line 116.
+    Found 3-bit adder carry out for signal <add0002$addsub0000> created at line 117.
+    Found 3-bit comparator lessequal for signal <Aligne$cmp_le0000> created at line 138.
+    Found 3-bit comparator lessequal for signal <Aligne$cmp_le0001> created at line 138.
+    Found 3-bit comparator lessequal for signal <Aligne$cmp_le0002> created at line 138.
+    Found 11-bit comparator greatequal for signal <Couleur$cmp_ge0000> created at line 83.
+    Found 13-bit comparator greatequal for signal <Couleur$cmp_ge0001> created at line 83.
+    Found 11-bit comparator greatequal for signal <Couleur$cmp_ge0002> created at line 87.
+    Found 13-bit comparator greatequal for signal <Couleur$cmp_ge0003> created at line 87.
+    Found 11-bit comparator greatequal for signal <Couleur$cmp_ge0004> created at line 91.
+    Found 13-bit comparator greatequal for signal <Couleur$cmp_ge0005> created at line 91.
+    Found 11-bit comparator lessequal for signal <Couleur$cmp_le0000> created at line 83.
+    Found 11-bit comparator lessequal for signal <Couleur$cmp_le0001> created at line 83.
+    Found 11-bit comparator lessequal for signal <Couleur$cmp_le0002> created at line 87.
+    Found 11-bit comparator lessequal for signal <Couleur$cmp_le0003> created at line 91.
+    Found 3-bit subtractor for signal <old_Row_7$sub0000> created at line 111.
+    Found 3-bit adder for signal <old_Row_8$add0000> created at line 115.
+    Found 3-bit adder for signal <old_Row_8$add0001> created at line 116.
+    Found 3-bit adder for signal <old_Row_8$add0002> created at line 117.
+    Found 4-bit comparator greater for signal <old_Row_8$cmp_gt0000> created at line 115.
+    Found 4-bit comparator greater for signal <old_Row_8$cmp_gt0001> created at line 116.
+    Found 4-bit comparator greater for signal <old_Row_8$cmp_gt0002> created at line 117.
+    Found 4-bit comparator less for signal <Perdu$cmp_lt0000> created at line 96.
+    Found 4-bit comparator less for signal <Perdu$cmp_lt0001> created at line 96.
+    Found 4-bit comparator less for signal <Perdu$cmp_lt0002> created at line 96.
+    Found 3-bit comparator not equal for signal <PlusCentre$cmp_ne0001> created at line 126.
+    Found 3-bit comparator not equal for signal <PlusDroite$cmp_ne0001> created at line 130.
+    Found 4-bit comparator greatequal for signal <PlusGauche$cmp_ge0000> created at line 96.
+    Found 4-bit comparator greatequal for signal <PlusGauche$cmp_ge0001> created at line 96.
+    Found 4-bit comparator greatequal for signal <PlusGauche$cmp_ge0002> created at line 96.
+    Found 3-bit comparator lessequal for signal <PlusGauche$cmp_le0000> created at line 110.
+    Found 3-bit comparator not equal for signal <PlusGauche$cmp_ne0001> created at line 122.
+    Found 1-bit register for signal <pressed>.
+    Found 3-bit comparator greater for signal <pressed$cmp_gt0000> created at line 110.
+    Found 3-bit comparator equal for signal <Row$cmp_eq0000> created at line 122.
+    Found 3-bit comparator equal for signal <Row$cmp_eq0001> created at line 126.
+    Found 3-bit comparator equal for signal <Row$cmp_eq0002> created at line 130.
+    Summary:
+	inferred  14 D-type flip-flop(s).
+	inferred  10 Adder/Subtractor(s).
+	inferred   3 Multiplier(s).
+	inferred  30 Comparator(s).
+Unit <Pesanteur> synthesized.
+
+
+Synthesizing Unit <Button>.
+    Related source file is "../Button.v".
+    Found 2-bit register for signal <state>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <Button> synthesized.
+
+
+Synthesizing Unit <Digit>.
+    Related source file is "../Digit.v".
+    Found 16x8-bit ROM for signal <cathodes>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <Digit> synthesized.
+
+
+Synthesizing Unit <Number>.
+    Related source file is "../Number.v".
+    Found 4-bit 4-to-1 multiplexer for signal <dataCurr>.
+    Found 2-bit up counter for signal <rankCurr>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   5 Multiplexer(s).
+Unit <Number> synthesized.
+
+
+Synthesizing Unit <Score>.
+    Related source file is "../score.v".
+    Found 3-bit register for signal <blank<3:1>>.
+    Found 4-bit up counter for signal <cpt0>.
+    Found 4-bit comparator greater for signal <cpt0$cmp_gt0000> created at line 60.
+    Found 4-bit comparator greater for signal <cpt0$cmp_gt0001> created at line 60.
+    Found 4-bit comparator greater for signal <cpt0$cmp_gt0002> created at line 60.
+    Found 4-bit comparator greater for signal <cpt0$cmp_gt0003> created at line 60.
+    Found 4-bit up counter for signal <cpt1>.
+    Found 4-bit up counter for signal <cpt2>.
+    Found 4-bit up counter for signal <cpt3>.
+    Summary:
+	inferred   4 Counter(s).
+	inferred   3 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+Unit <Score> synthesized.
+
+
+Synthesizing Unit <TroisBriques>.
+    Related source file is "../TroisBriques.v".
+Unit <TroisBriques> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Multipliers                                          : 7
+ 2x8-bit multiplier                                    : 1
+ 3x8-bit multiplier                                    : 4
+ 4x9-bit multiplier                                    : 2
+# Adders/Subtractors                                   : 23
+ 10-bit adder carry out                                : 1
+ 11-bit adder carry out                                : 1
+ 11-bit subtractor                                     : 2
+ 13-bit adder                                          : 3
+ 2-bit adder carry out                                 : 1
+ 3-bit adder                                           : 6
+ 3-bit adder carry out                                 : 3
+ 3-bit subtractor                                      : 4
+ 4-bit adder                                           : 2
+# Counters                                             : 10
+ 11-bit up counter                                     : 2
+ 12-bit up counter                                     : 1
+ 2-bit up counter                                      : 2
+ 26-bit up counter                                     : 1
+ 4-bit up counter                                      : 4
+# Registers                                            : 17
+ 1-bit register                                        : 11
+ 2-bit register                                        : 1
+ 3-bit register                                        : 4
+ 5-bit register                                        : 1
+# Latches                                              : 9
+ 32-bit latch                                          : 9
+# Comparators                                          : 118
+ 11-bit comparator greatequal                          : 10
+ 11-bit comparator less                                : 5
+ 11-bit comparator lessequal                           : 7
+ 12-bit comparator less                                : 1
+ 13-bit comparator greatequal                          : 3
+ 14-bit comparator greatequal                          : 1
+ 14-bit comparator less                                : 1
+ 3-bit comparator equal                                : 3
+ 3-bit comparator greatequal                           : 3
+ 3-bit comparator greater                              : 4
+ 3-bit comparator less                                 : 6
+ 3-bit comparator lessequal                            : 4
+ 3-bit comparator not equal                            : 3
+ 4-bit comparator greatequal                           : 3
+ 4-bit comparator greater                              : 7
+ 4-bit comparator less                                 : 3
+ 5-bit comparator greatequal                           : 24
+ 5-bit comparator greater                              : 3
+ 5-bit comparator lessequal                            : 27
+# Multiplexers                                         : 2
+ 1-bit 4-to-1 multiplexer                              : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <poignee/regCol/FSM> on signal <regCol[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 10    | 10
+ 01    | 01
+-------------------
+INFO:Xst:2261 - The FF/Latch <Couleur_0> in Unit <tetris> is equivalent to the following FF/Latch, which will be removed : <Couleur_2> 
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <1>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <TroisBriques>.
+	Found pipelined multiplier on signal <tetris/_mult0002>:
+		- 1 pipeline level(s) found in a register on signal <hauteurDroite>.
+		Pushing register(s) into the multiplier macro.
+	Found pipelined multiplier on signal <tetris/_mult0001>:
+		- 1 pipeline level(s) found in a register on signal <hauteurCentre>.
+		Pushing register(s) into the multiplier macro.
+	Found pipelined multiplier on signal <tetris/_mult0000>:
+		- 1 pipeline level(s) found in a register on signal <hauteurGauche>.
+		Pushing register(s) into the multiplier macro.
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier tetris/Mmult__mult0002 by adding 1 register level(s).
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier tetris/Mmult__mult0001 by adding 1 register level(s).
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier tetris/Mmult__mult0000 by adding 1 register level(s).
+Unit <TroisBriques> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Multipliers                                          : 7
+ 2x8-bit multiplier                                    : 1
+ 3x8-bit multiplier                                    : 1
+ 3x8-bit registered multiplier                         : 3
+ 4x9-bit multiplier                                    : 2
+# Adders/Subtractors                                   : 23
+ 10-bit adder carry out                                : 1
+ 11-bit adder carry out                                : 1
+ 11-bit subtractor                                     : 2
+ 13-bit adder                                          : 3
+ 2-bit adder carry out                                 : 1
+ 3-bit adder                                           : 6
+ 3-bit adder carry out                                 : 3
+ 3-bit subtractor                                      : 4
+ 4-bit adder                                           : 2
+# Counters                                             : 10
+ 11-bit up counter                                     : 2
+ 12-bit up counter                                     : 1
+ 2-bit up counter                                      : 2
+ 26-bit up counter                                     : 1
+ 4-bit up counter                                      : 4
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+# Latches                                              : 9
+ 32-bit latch                                          : 9
+# Comparators                                          : 118
+ 11-bit comparator greatequal                          : 10
+ 11-bit comparator less                                : 5
+ 11-bit comparator lessequal                           : 7
+ 12-bit comparator less                                : 1
+ 13-bit comparator greatequal                          : 3
+ 14-bit comparator greatequal                          : 1
+ 14-bit comparator less                                : 1
+ 3-bit comparator equal                                : 3
+ 3-bit comparator greatequal                           : 3
+ 3-bit comparator greater                              : 4
+ 3-bit comparator less                                 : 6
+ 3-bit comparator lessequal                            : 4
+ 3-bit comparator not equal                            : 3
+ 4-bit comparator greatequal                           : 3
+ 4-bit comparator greater                              : 7
+ 4-bit comparator less                                 : 3
+ 5-bit comparator greatequal                           : 24
+ 5-bit comparator greater                              : 3
+ 5-bit comparator lessequal                            : 27
+# Multiplexers                                         : 2
+ 1-bit 4-to-1 multiplexer                              : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <tetris/Couleur_0> in Unit <TroisBriques> is equivalent to the following FF/Latch, which will be removed : <tetris/Couleur_2> 
+INFO:Xst:2261 - The FF/Latch <1> in Unit <LPM_LATCH_8> is equivalent to the following FF/Latch, which will be removed : <0> 
+INFO:Xst:2261 - The FF/Latch <31> in Unit <LPM_LATCH_8> is equivalent to the following 28 FFs/Latches, which will be removed : <30> <29> <28> <27> <26> <25> <24> <23> <22> <21> <20> <19> <18> <17> <16> <15> <14> <13> <12> <11> <10> <9> <8> <7> <6> <5> <4> <3> 
+INFO:Xst:2261 - The FF/Latch <1> in Unit <LPM_LATCH_7> is equivalent to the following FF/Latch, which will be removed : <0> 
+INFO:Xst:2261 - The FF/Latch <31> in Unit <LPM_LATCH_7> is equivalent to the following 28 FFs/Latches, which will be removed : <30> <29> <28> <27> <26> <25> <24> <23> <22> <21> <20> <19> <18> <17> <16> <15> <14> <13> <12> <11> <10> <9> <8> <7> <6> <5> <4> <3> 
+INFO:Xst:2261 - The FF/Latch <1> in Unit <LPM_LATCH_6> is equivalent to the following FF/Latch, which will be removed : <0> 
+INFO:Xst:2261 - The FF/Latch <31> in Unit <LPM_LATCH_6> is equivalent to the following 28 FFs/Latches, which will be removed : <30> <29> <28> <27> <26> <25> <24> <23> <22> <21> <20> <19> <18> <17> <16> <15> <14> <13> <12> <11> <10> <9> <8> <7> <6> <5> <4> <3> 
+INFO:Xst:2261 - The FF/Latch <1> in Unit <LPM_LATCH_5> is equivalent to the following FF/Latch, which will be removed : <0> 
+INFO:Xst:2261 - The FF/Latch <31> in Unit <LPM_LATCH_5> is equivalent to the following 28 FFs/Latches, which will be removed : <30> <29> <28> <27> <26> <25> <24> <23> <22> <21> <20> <19> <18> <17> <16> <15> <14> <13> <12> <11> <10> <9> <8> <7> <6> <5> <4> <3> 
+INFO:Xst:2261 - The FF/Latch <1> in Unit <LPM_LATCH_4> is equivalent to the following FF/Latch, which will be removed : <0> 
+INFO:Xst:2261 - The FF/Latch <31> in Unit <LPM_LATCH_4> is equivalent to the following 28 FFs/Latches, which will be removed : <30> <29> <28> <27> <26> <25> <24> <23> <22> <21> <20> <19> <18> <17> <16> <15> <14> <13> <12> <11> <10> <9> <8> <7> <6> <5> <4> <3> 
+INFO:Xst:2261 - The FF/Latch <1> in Unit <LPM_LATCH_1> is equivalent to the following FF/Latch, which will be removed : <0> 
+INFO:Xst:2261 - The FF/Latch <31> in Unit <LPM_LATCH_1> is equivalent to the following 28 FFs/Latches, which will be removed : <30> <29> <28> <27> <26> <25> <24> <23> <22> <21> <20> <19> <18> <17> <16> <15> <14> <13> <12> <11> <10> <9> <8> <7> <6> <5> <4> <3> 
+WARNING:Xst:1710 - FF/Latch <31> (without init value) has a constant value of 0 in block <LPM_LATCH_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <31> (without init value) has a constant value of 0 in block <LPM_LATCH_7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <31> (without init value) has a constant value of 0 in block <LPM_LATCH_6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <31> (without init value) has a constant value of 0 in block <LPM_LATCH_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <31> (without init value) has a constant value of 0 in block <LPM_LATCH_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <31> (without init value) has a constant value of 0 in block <LPM_LATCH_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <sortieBleu_3_sortieBleu_2> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_3_sortieBleu_3> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_3_sortieBleu_4> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_3_sortieBleu_5> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_3_sortieBleu_6> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_3_sortieBleu_7> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_3_sortieBleu_8> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_3_sortieBleu_9> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_3_sortieBleu_10> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_3_sortieBleu_11> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_3_sortieBleu_12> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_3_sortieBleu_13> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_3_sortieBleu_14> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_3_sortieBleu_15> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_3_sortieBleu_16> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_3_sortieBleu_17> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_3_sortieBleu_18> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_3_sortieBleu_19> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_3_sortieBleu_20> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_3_sortieBleu_21> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_3_sortieBleu_22> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_3_sortieBleu_23> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_3_sortieBleu_24> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_3_sortieBleu_25> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_3_sortieBleu_26> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_3_sortieBleu_27> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_3_sortieBleu_28> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_3_sortieBleu_29> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_3_sortieBleu_30> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_3_sortieBleu_31> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_2_sortieBleu_2> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_2_sortieBleu_3> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_2_sortieBleu_4> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_2_sortieBleu_5> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_2_sortieBleu_6> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_2_sortieBleu_7> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_2_sortieBleu_8> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_2_sortieBleu_9> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_2_sortieBleu_10> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_2_sortieBleu_11> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_2_sortieBleu_12> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_2_sortieBleu_13> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_2_sortieBleu_14> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_2_sortieBleu_15> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_2_sortieBleu_16> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_2_sortieBleu_17> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_2_sortieBleu_18> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_2_sortieBleu_19> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_2_sortieBleu_20> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_2_sortieBleu_21> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_2_sortieBleu_22> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_2_sortieBleu_23> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_2_sortieBleu_24> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_2_sortieBleu_25> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_2_sortieBleu_26> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_2_sortieBleu_27> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_2_sortieBleu_28> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_2_sortieBleu_29> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_2_sortieBleu_30> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_2_sortieBleu_31> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_1_sortieBleu_2> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_1_sortieBleu_3> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_1_sortieBleu_4> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_1_sortieBleu_5> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_1_sortieBleu_6> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_1_sortieBleu_7> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_1_sortieBleu_8> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_1_sortieBleu_9> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_1_sortieBleu_10> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_1_sortieBleu_11> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_1_sortieBleu_12> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_1_sortieBleu_13> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_1_sortieBleu_14> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_1_sortieBleu_15> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_1_sortieBleu_16> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_1_sortieBleu_17> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_1_sortieBleu_18> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_1_sortieBleu_19> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_1_sortieBleu_20> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_1_sortieBleu_21> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_1_sortieBleu_22> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_1_sortieBleu_23> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_1_sortieBleu_24> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_1_sortieBleu_25> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_1_sortieBleu_26> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_1_sortieBleu_27> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_1_sortieBleu_28> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_1_sortieBleu_29> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_1_sortieBleu_30> of sequential type is unconnected in block <Rgb>.
+WARNING:Xst:2677 - Node <sortieBleu_1_sortieBleu_31> of sequential type is unconnected in block <Rgb>.
+INFO:Xst:2261 - The FF/Latch <droite/regHauteur_0> in Unit <TroisBriques> is equivalent to the following FF/Latch, which will be removed : <tetris/Mmult__mult0002_2> 
+INFO:Xst:2261 - The FF/Latch <droite/regHauteur_1> in Unit <TroisBriques> is equivalent to the following FF/Latch, which will be removed : <tetris/Mmult__mult0002_1> 
+INFO:Xst:2261 - The FF/Latch <droite/regHauteur_2> in Unit <TroisBriques> is equivalent to the following FF/Latch, which will be removed : <tetris/Mmult__mult0002_0> 
+INFO:Xst:2261 - The FF/Latch <centre/regHauteur_0> in Unit <TroisBriques> is equivalent to the following FF/Latch, which will be removed : <tetris/Mmult__mult0001_2> 
+INFO:Xst:2261 - The FF/Latch <centre/regHauteur_1> in Unit <TroisBriques> is equivalent to the following FF/Latch, which will be removed : <tetris/Mmult__mult0001_1> 
+INFO:Xst:2261 - The FF/Latch <centre/regHauteur_2> in Unit <TroisBriques> is equivalent to the following FF/Latch, which will be removed : <tetris/Mmult__mult0001_0> 
+
+Optimizing unit <TroisBriques> ...
+
+Optimizing unit <BaseDeTemps> ...
+
+Optimizing unit <Vga> ...
+
+Optimizing unit <Cadre> ...
+
+Optimizing unit <Brique> ...
+
+Optimizing unit <Manette> ...
+
+Optimizing unit <Rgb> ...
+
+Optimizing unit <Score> ...
+WARNING:Xst:1710 - FF/Latch <pixel/sortieBleu_3_sortieBleu_1> (without init value) has a constant value of 0 in block <TroisBriques>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <pixel/sortieVert_3_sortieVert_2> (without init value) has a constant value of 0 in block <TroisBriques>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <pixel/sortieBleu_2_sortieBleu_1> (without init value) has a constant value of 0 in block <TroisBriques>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <pixel/sortieBleu_2_sortieBleu_0> (without init value) has a constant value of 0 in block <TroisBriques>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+WARNING:Xst:1710 - FF/Latch <pixel/sortieVert_3_sortieVert_1> (without init value) has a constant value of 0 in block <TroisBriques>. This FF/Latch will be trimmed during the optimization process.
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <pixel/sortieRouge_3_sortieRouge_2> in Unit <TroisBriques> is equivalent to the following FF/Latch, which will be removed : <pixel/sortieRouge_3_sortieRouge_1> 
+INFO:Xst:2261 - The FF/Latch <pixel/sortieRouge_2_sortieRouge_2> in Unit <TroisBriques> is equivalent to the following 2 FFs/Latches, which will be removed : <pixel/sortieRouge_2_sortieRouge_1> <pixel/sortieVert_2_sortieVert_2> 
+Found area constraint ratio of 100 (+ 5) on block TroisBriques, actual ratio is 33.
+INFO:Xst:2260 - The FF/Latch <pixel/sortieRouge_2_sortieRouge_2> in Unit <TroisBriques> is equivalent to the following FF/Latch : <pixel/sortieVert_2_sortieVert_1> 
+INFO:Xst:2261 - The FF/Latch <pixel/sortieRouge_2_sortieRouge_2> in Unit <TroisBriques> is equivalent to the following FF/Latch, which will be removed : <pixel/sortieVert_2_sortieVert_1> 
+FlipFlop centre/regHauteur_1 has been replicated 1 time(s)
+FlipFlop centre/regHauteur_2 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 113
+ Flip-Flops                                            : 113
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : TroisBriques.ngr
+Top Level Output File Name         : TroisBriques
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 29
+
+Cell Usage :
+# BELS                             : 907
+#      GND                         : 1
+#      INV                         : 36
+#      LUT1                        : 80
+#      LUT2                        : 55
+#      LUT2_L                      : 1
+#      LUT3                        : 110
+#      LUT3_D                      : 4
+#      LUT3_L                      : 1
+#      LUT4                        : 225
+#      LUT4_D                      : 6
+#      LUT4_L                      : 8
+#      MUXCY                       : 237
+#      MUXF5                       : 26
+#      MUXF6                       : 3
+#      VCC                         : 1
+#      XORCY                       : 113
+# FlipFlops/Latches                : 122
+#      FD                          : 3
+#      FDE                         : 1
+#      FDR                         : 21
+#      FDRE                        : 74
+#      FDRSE                       : 11
+#      FDS                         : 1
+#      FDSE                        : 2
+#      LD                          : 3
+#      LDCP                        : 6
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 28
+#      IBUF                        : 6
+#      OBUF                        : 22
+# MULTs                            : 4
+#      MULT18X18SIO                : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-5 
+
+ Number of Slices:                      286  out of    960    29%  
+ Number of Slice Flip Flops:            122  out of   1920     6%  
+ Number of 4 input LUTs:                526  out of   1920    27%  
+ Number of IOs:                          29
+ Number of bonded IOBs:                  29  out of     83    34%  
+ Number of MULT18X18SIOs:                 4  out of      4   100%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------------------------------------------------+-------------------------------------------+-------+
+Clock Signal                                                                   | Clock buffer(FF name)                     | Load  |
+-------------------------------------------------------------------------------+-------------------------------------------+-------+
+clk                                                                            | BUFGP                                     | 114   |
+pixel/sortieRouge_or0000(pixel/sortieRouge_or00001:O)                          | NONE(*)(pixel/sortieRouge_1_sortieRouge_2)| 2     |
+pixel/sortieVert_or0000(pixel/sortieVert_or00001:O)                            | NONE(*)(pixel/sortieVert_1_sortieVert_2)  | 2     |
+pixel/rouge_and0001(pixel/sortieRouge_or00011:O)                               | NONE(*)(pixel/sortieRouge_2_sortieRouge_2)| 1     |
+pixel/sortieRouge_or0002(pixel/sortieRouge_or00021:O)                          | NONE(*)(pixel/sortieRouge_3_sortieRouge_2)| 1     |
+pixel/sortieBleu_1_sortieBleu_not0000(pixel/sortieBleu_1_sortieBleu_not00001:O)| NONE(*)(pixel/sortieBleu_1_sortieBleu_1)  | 2     |
+couleurCadre<2>(bord/couleur<4>66:O)                                           | NONE(*)(pixel/sortieBleu_3_sortieBleu_0)  | 1     |
+-------------------------------------------------------------------------------+-------------------------------------------+-------+
+(*) These 6 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------------------------------------------------------------+----------------------------------------+-------+
+Control Signal                                                                           | Buffer(FF name)                        | Load  |
+-----------------------------------------------------------------------------------------+----------------------------------------+-------+
+pixel/sortieBleu_or0003(XST_GND:G)                                                       | NONE(pixel/sortieRouge_1_sortieRouge_1)| 4     |
+couleurCadre<2>(bord/couleur<4>66:O)                                                     | NONE(pixel/sortieRouge_3_sortieRouge_2)| 1     |
+couleurPave<0>(pave/couleur_and00001:O)                                                  | NONE(pixel/sortieRouge_2_sortieRouge_2)| 1     |
+pixel/sortieRouge_1_sortieRouge_0__or0000(pixel/sortieRouge_1_sortieRouge_0__or00001:O)  | NONE(pixel/sortieRouge_1_sortieRouge_1)| 1     |
+pixel/sortieRouge_1_sortieRouge_2__and0000(pixel/sortieRouge_1_sortieRouge_2__and00001:O)| NONE(pixel/sortieRouge_1_sortieRouge_2)| 1     |
+pixel/sortieRouge_and0000(pixel/sortieRouge_and00001:O)                                  | NONE(pixel/sortieRouge_1_sortieRouge_2)| 1     |
+pixel/sortieVert_1_sortieVert_0__or0000(pixel/sortieVert_1_sortieVert_0__or00001:O)      | NONE(pixel/sortieVert_1_sortieVert_1)  | 1     |
+pixel/sortieVert_or0001(pixel/sortieVert_or00011:O)                                      | NONE(pixel/sortieVert_1_sortieVert_2)  | 1     |
+pixel/sortieVert_or0002(pixel/sortieVert_or00021:O)                                      | NONE(pixel/sortieVert_1_sortieVert_2)  | 1     |
+-----------------------------------------------------------------------------------------+----------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 10.553ns (Maximum Frequency: 94.762MHz)
+   Minimum input arrival time before clock: 10.044ns
+   Maximum output required time after clock: 18.723ns
+   Maximum combinational path delay: 6.473ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 10.553ns (frequency: 94.762MHz)
+  Total number of paths / destination ports: 17848 / 253
+-------------------------------------------------------------------------
+Delay:               10.553ns (Levels of Logic = 12)
+  Source:            droite/regHauteur_0 (FF)
+  Destination:       tetris/Row_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: droite/regHauteur_0 to tetris/Row_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             16   0.514   1.031  droite/regHauteur_0 (droite/regHauteur_0)
+     LUT4:I0->O            1   0.612   0.000  tetris/old_Row_8_cmp_gt000211 (tetris/old_Row_8_cmp_gt00021)
+     MUXF5:I1->O           1   0.278   0.000  tetris/old_Row_8_cmp_gt00021_f5 (tetris/old_Row_8_cmp_gt00021_f5)
+     MUXF6:I1->O           4   0.451   0.651  tetris/old_Row_8_cmp_gt00021_f6 (tetris/old_Row_8_cmp_gt0002)
+     LUT3:I0->O            1   0.612   0.000  tetris/_old_Row_10<1>69_SW0_G (N143)
+     MUXF5:I1->O           1   0.278   0.360  tetris/_old_Row_10<1>69_SW0 (N114)
+     LUT4_L:I3->LO         1   0.612   0.103  tetris/_old_Row_10<1>69 (tetris/_old_Row_10<1>69)
+     LUT4:I3->O            1   0.612   0.360  tetris/_old_Row_10<1>98_SW0 (N112)
+     LUT4_D:I3->O          4   0.612   0.529  tetris/_old_Row_10<1>98 (tetris/_old_Row_10<1>)
+     LUT3_D:I2->LO         1   0.612   0.169  tetris/Row_cmp_eq00003 (N156)
+     LUT3:I1->O            1   0.612   0.387  tetris/Row_mux0000<0>111 (N67)
+     LUT3:I2->O            1   0.612   0.000  tetris/Row_mux0000<2>44_F (N96)
+     MUXF5:I0->O           1   0.278   0.000  tetris/Row_mux0000<2>44 (tetris/Row_mux0000<2>)
+     FDRE:D                    0.268          tetris/Row_0
+    ----------------------------------------
+    Total                     10.553ns (6.963ns logic, 3.590ns route)
+                                       (66.0% logic, 34.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 520 / 196
+-------------------------------------------------------------------------
+Offset:              10.044ns (Levels of Logic = 10)
+  Source:            boutonTomber (PAD)
+  Destination:       tetris/Row_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: boutonTomber to tetris/Row_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.106   0.690  boutonTomber_IBUF (boutonTomber_IBUF)
+     LUT2:I0->O            2   0.612   0.410  tetris/_old_pressed_31 (tetris/_old_pressed_3)
+     LUT4_D:I2->O          2   0.612   0.383  tetris/_old_Row_10<0>11 (N29)
+     LUT4_L:I3->LO         1   0.612   0.103  tetris/_old_Row_10<2>27 (tetris/_old_Row_10<2>27)
+     LUT4:I3->O            5   0.612   0.568  tetris/_old_Row_10<2>126 (tetris/_old_Row_10<2>)
+     LUT4:I2->O            1   0.612   0.426  tetris/Row_cmp_eq00023_SW0 (N65)
+     LUT3:I1->O            4   0.612   0.529  tetris/Row_cmp_eq00023 (tetris/Row_cmp_eq0002)
+     LUT3:I2->O            1   0.612   0.387  tetris/Row_mux0000<0>111 (N67)
+     LUT3:I2->O            1   0.612   0.000  tetris/Row_mux0000<2>44_F (N96)
+     MUXF5:I0->O           1   0.278   0.000  tetris/Row_mux0000<2>44 (tetris/Row_mux0000<2>)
+     FDRE:D                    0.268          tetris/Row_0
+    ----------------------------------------
+    Total                     10.044ns (6.548ns logic, 3.496ns route)
+                                       (65.2% logic, 34.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 25811 / 21
+-------------------------------------------------------------------------
+Offset:              18.723ns (Levels of Logic = 13)
+  Source:            poignee/regCol_FSM_FFd1 (FF)
+  Destination:       rouge<1> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: poignee/regCol_FSM_FFd1 to rouge<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            28   0.514   1.224  poignee/regCol_FSM_FFd1 (poignee/regCol_FSM_FFd1)
+     LUT2:I0->O            1   0.612   0.357  pave/Madd_add0000_index00011 (pave/Madd_add0000_index0001)
+     MULT18X18SIO:A2->P9    1   4.022   0.509  pave/Mmult_add0000_mult0000 (pave/add0000_mult0000<9>)
+     LUT1:I0->O            1   0.612   0.000  pave/Madd_add0000_addsub0001_cy<9>_rt (pave/Madd_add0000_addsub0001_cy<9>_rt)
+     MUXCY:S->O            1   0.404   0.000  pave/Madd_add0000_addsub0001_cy<9> (pave/Madd_add0000_addsub0001_cy<9>)
+     XORCY:CI->O           1   0.699   0.426  pave/Madd_add0000_addsub0001_xor<10> (pave/add0000_addsub0001<10>)
+     LUT2:I1->O            1   0.612   0.000  pave/Mcompar_couleur_cmp_lt0001_lut<10> (pave/Mcompar_couleur_cmp_lt0001_lut<10>)
+     MUXCY:S->O            1   0.404   0.000  pave/Mcompar_couleur_cmp_lt0001_cy<10> (pave/Mcompar_couleur_cmp_lt0001_cy<10>)
+     MUXCY:CI->O           2   0.400   0.383  pave/Mcompar_couleur_cmp_lt0001_cy<11> (pave/Mcompar_couleur_cmp_lt0001_cy<11>)
+     LUT4:I3->O            4   0.612   0.568  pave/couleur_and00001 (couleurPave<0>)
+     LUT3:I1->O            2   0.612   0.532  pixel/bleu<0>11 (pixel/N14)
+     LUT4:I0->O            2   0.612   0.449  pixel/rouge<2>_SW0 (N78)
+     LUT3:I1->O            2   0.612   0.380  pixel/rouge<1> (rouge_0_OBUF)
+     OBUF:I->O                 3.169          rouge_1_OBUF (rouge<1>)
+    ----------------------------------------
+    Total                     18.723ns (13.896ns logic, 4.828ns route)
+                                       (74.2% logic, 25.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'pixel/rouge_and0001'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              6.291ns (Levels of Logic = 3)
+  Source:            pixel/sortieRouge_2_sortieRouge_2 (LATCH)
+  Destination:       rouge<1> (PAD)
+  Source Clock:      pixel/rouge_and0001 falling
+
+  Data Path: pixel/sortieRouge_2_sortieRouge_2 to rouge<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCP:G->Q             3   0.588   0.481  pixel/sortieRouge_2_sortieRouge_2 (pixel/sortieRouge_2_sortieRouge_2)
+     LUT4:I2->O            2   0.612   0.449  pixel/rouge<2>_SW0 (N78)
+     LUT3:I1->O            2   0.612   0.380  pixel/rouge<1> (rouge_0_OBUF)
+     OBUF:I->O                 3.169          rouge_1_OBUF (rouge<1>)
+    ----------------------------------------
+    Total                      6.291ns (4.981ns logic, 1.310ns route)
+                                       (79.2% logic, 20.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'pixel/sortieVert_or0000'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              5.109ns (Levels of Logic = 2)
+  Source:            pixel/sortieVert_1_sortieVert_1 (LATCH)
+  Destination:       vert<1> (PAD)
+  Source Clock:      pixel/sortieVert_or0000 falling
+
+  Data Path: pixel/sortieVert_1_sortieVert_1 to vert<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCP:G->Q             1   0.588   0.360  pixel/sortieVert_1_sortieVert_1 (pixel/sortieVert_1_sortieVert_1)
+     LUT4:I3->O            2   0.612   0.380  pixel/vert<1> (vert_0_OBUF)
+     OBUF:I->O                 3.169          vert_1_OBUF (vert<1>)
+    ----------------------------------------
+    Total                      5.109ns (4.369ns logic, 0.740ns route)
+                                       (85.5% logic, 14.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'pixel/sortieBleu_1_sortieBleu_not0000'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              5.235ns (Levels of Logic = 2)
+  Source:            pixel/sortieBleu_1_sortieBleu_1 (LATCH)
+  Destination:       bleu<1> (PAD)
+  Source Clock:      pixel/sortieBleu_1_sortieBleu_not0000 falling
+
+  Data Path: pixel/sortieBleu_1_sortieBleu_1 to bleu<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.588   0.509  pixel/sortieBleu_1_sortieBleu_1 (pixel/sortieBleu_1_sortieBleu_1)
+     LUT2:I0->O            1   0.612   0.357  pixel/bleu<1>1 (bleu_1_OBUF)
+     OBUF:I->O                 3.169          bleu_1_OBUF (bleu<1>)
+    ----------------------------------------
+    Total                      5.235ns (4.369ns logic, 0.866ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'couleurCadre<2>'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.086ns (Levels of Logic = 2)
+  Source:            pixel/sortieBleu_3_sortieBleu_0 (LATCH)
+  Destination:       bleu<0> (PAD)
+  Source Clock:      couleurCadre<2> falling
+
+  Data Path: pixel/sortieBleu_3_sortieBleu_0 to bleu<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.588   0.360  pixel/sortieBleu_3_sortieBleu_0 (pixel/sortieBleu_3_sortieBleu_0)
+     LUT4:I3->O            1   0.612   0.357  pixel/bleu<0>1 (bleu_0_OBUF)
+     OBUF:I->O                 3.169          bleu_0_OBUF (bleu<0>)
+    ----------------------------------------
+    Total                      5.086ns (4.369ns logic, 0.717ns route)
+                                       (85.9% logic, 14.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'pixel/sortieRouge_or0002'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              6.236ns (Levels of Logic = 3)
+  Source:            pixel/sortieRouge_3_sortieRouge_2 (LATCH)
+  Destination:       rouge<1> (PAD)
+  Source Clock:      pixel/sortieRouge_or0002 falling
+
+  Data Path: pixel/sortieRouge_3_sortieRouge_2 to rouge<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCP:G->Q             1   0.588   0.426  pixel/sortieRouge_3_sortieRouge_2 (pixel/sortieRouge_3_sortieRouge_2)
+     LUT4:I1->O            2   0.612   0.449  pixel/rouge<2>_SW0 (N78)
+     LUT3:I1->O            2   0.612   0.380  pixel/rouge<1> (rouge_0_OBUF)
+     OBUF:I->O                 3.169          rouge_1_OBUF (rouge<1>)
+    ----------------------------------------
+    Total                      6.236ns (4.981ns logic, 1.255ns route)
+                                       (79.9% logic, 20.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'pixel/sortieRouge_or0000'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              5.136ns (Levels of Logic = 2)
+  Source:            pixel/sortieRouge_1_sortieRouge_1 (LATCH)
+  Destination:       rouge<1> (PAD)
+  Source Clock:      pixel/sortieRouge_or0000 falling
+
+  Data Path: pixel/sortieRouge_1_sortieRouge_1 to rouge<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCP:G->Q             1   0.588   0.387  pixel/sortieRouge_1_sortieRouge_1 (pixel/sortieRouge_1_sortieRouge_1)
+     LUT3:I2->O            2   0.612   0.380  pixel/rouge<1> (rouge_0_OBUF)
+     OBUF:I->O                 3.169          rouge_1_OBUF (rouge<1>)
+    ----------------------------------------
+    Total                      5.136ns (4.369ns logic, 0.767ns route)
+                                       (85.1% logic, 14.9% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Delay:               6.473ns (Levels of Logic = 3)
+  Source:            reset (PAD)
+  Destination:       anodes<1> (PAD)
+
+  Data Path: reset to anodes<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            47   1.106   1.229  reset_IBUF (reset_IBUF)
+     LUT4:I0->O            1   0.612   0.357  partie/number/digit/anodes_1_mux00001 (anodes_1_OBUF)
+     OBUF:I->O                 3.169          anodes_1_OBUF (anodes<1>)
+    ----------------------------------------
+    Total                      6.473ns (4.887ns logic, 1.586ns route)
+                                       (75.5% logic, 24.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.44 secs
+ 
+--> 
+
+
+Total memory usage is 535992 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  121 (   0 filtered)
+Number of infos    :   32 (   0 filtered)
+

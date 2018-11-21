@@ -1,0 +1,10 @@
+Command line:
+   vgTest_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51743
+
+Fri Nov 16 13:48:32 2018
+
+
+ Elaboration Time: 0.01 sec

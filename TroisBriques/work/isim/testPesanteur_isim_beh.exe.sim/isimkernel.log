@@ -1,0 +1,10 @@
+Command line:
+   testPesanteur_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  49067
+
+Fri Nov 16 14:12:32 2018
+
+
+ Elaboration Time: 0.01 sec

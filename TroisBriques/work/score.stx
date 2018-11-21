@@ -1,0 +1,49 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /export/homes/yli1/TroisBriques/work/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Parameter xsthdpdir set to /export/homes/yli1/TroisBriques/work/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "../Digit.v" in library work
+Compiling verilog file "../TimeUnit.v" in library work
+Module <Digit> compiled
+Compiling verilog file "../Number.v" in library work
+Module <TimeUnit> compiled
+Compiling verilog file "../Button.v" in library work
+Module <Number> compiled
+Compiling verilog file "../score.v" in library work
+Module <Button> compiled
+Module <score> compiled
+No errors in compilation
+Analysis of file <"score.prj"> succeeded.
+ 
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+
+
+Total memory usage is 469708 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

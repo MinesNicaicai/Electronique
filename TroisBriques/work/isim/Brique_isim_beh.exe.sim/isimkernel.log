@@ -1,0 +1,29 @@
+Command line:
+   Brique_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49643
+
+Fri Nov 16 13:42:53 2018
+
+
+ Elaboration Time: 0.01 sec
+
+ Current Memory Usage: 196.239 Meg
+
+ Total Signals          : 17
+ Total Nets             : 45
+ Total Signal Drivers   : 6
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 8
+ Total Traceable Variables  : 25
+ Total Scalar Nets and Variables : 322
+Total Line Count : 18
+
+ Total Simulation Time: 0.04 sec
+
+ Current Memory Usage: 271.741 Meg
+
+Fri Nov 16 13:43:21 2018
+

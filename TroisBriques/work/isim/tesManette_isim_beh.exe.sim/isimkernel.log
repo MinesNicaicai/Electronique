@@ -1,0 +1,29 @@
+Command line:
+   tesManette_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  58865
+
+Thu Nov 15 13:26:19 2018
+
+
+ Elaboration Time: 0.01 sec
+
+ Current Memory Usage: 196.243 Meg
+
+ Total Signals          : 24
+ Total Nets             : 32
+ Total Signal Drivers   : 15
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 22
+ Total Traceable Variables  : 31
+ Total Scalar Nets and Variables : 198
+Total Line Count : 75
+
+ Total Simulation Time: 42.42 sec
+
+ Current Memory Usage: 271.745 Meg
+
+Thu Nov 15 13:27:05 2018
+

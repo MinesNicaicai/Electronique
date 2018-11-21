@@ -1,0 +1,29 @@
+Command line:
+   testBrique_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  57467
+
+Fri Nov 16 13:45:32 2018
+
+
+ Elaboration Time: 0.01 sec
+
+ Current Memory Usage: 196.243 Meg
+
+ Total Signals          : 18
+ Total Nets             : 45
+ Total Signal Drivers   : 10
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 15
+ Total Traceable Variables  : 29
+ Total Scalar Nets and Variables : 349
+Total Line Count : 32
+
+ Total Simulation Time: 306.45 sec
+
+ Current Memory Usage: 271.745 Meg
+
+Fri Nov 16 13:50:47 2018
+

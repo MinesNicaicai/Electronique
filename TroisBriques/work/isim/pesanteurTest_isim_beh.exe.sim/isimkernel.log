@@ -1,0 +1,29 @@
+Command line:
+   pesanteurTest_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  47137
+
+Wed Nov 14 20:57:14 2018
+
+
+ Elaboration Time: 0.01 sec
+
+ Current Memory Usage: 196.248 Meg
+
+ Total Signals          : 29
+ Total Nets             : 62
+ Total Signal Drivers   : 21
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 26
+ Total Traceable Variables  : 42
+ Total Scalar Nets and Variables : 447
+Total Line Count : 67
+
+ Total Simulation Time: 0.17 sec
+
+ Current Memory Usage: 271.749 Meg
+
+Wed Nov 14 21:26:57 2018
+

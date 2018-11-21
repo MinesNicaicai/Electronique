@@ -1,0 +1,5 @@
+set -tmpdir "/export/homes/yli1/TroisBriques/work/xst/projnav.tmp"
+set -xsthdpdir "/export/homes/yli1/TroisBriques/work/xst"
+elaborate
+-ifn score.prj
+-ifmt mixed

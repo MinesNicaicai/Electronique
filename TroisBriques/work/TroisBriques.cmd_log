@@ -1,0 +1,254 @@
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TroisBriques_map.ncd TroisBriques.ngd TroisBriques.pcf 
+par -w -intstyle ise -ol high -t 1 TroisBriques_map.ncd TroisBriques.ncd TroisBriques.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TroisBriques.twx TroisBriques.ncd -o TroisBriques.twr TroisBriques.pcf 
+bitgen -intstyle ise -f TroisBriques.ut TroisBriques.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TroisBriques_map.ncd TroisBriques.ngd TroisBriques.pcf 
+par -w -intstyle ise -ol high -t 1 TroisBriques_map.ncd TroisBriques.ncd TroisBriques.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TroisBriques.twx TroisBriques.ncd -o TroisBriques.twr TroisBriques.pcf 
+bitgen -intstyle ise -f TroisBriques.ut TroisBriques.ncd 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TroisBriques_map.ncd TroisBriques.ngd TroisBriques.pcf 
+par -w -intstyle ise -ol high -t 1 TroisBriques_map.ncd TroisBriques.ncd TroisBriques.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TroisBriques.twx TroisBriques.ncd -o TroisBriques.twr TroisBriques.pcf 
+bitgen -intstyle ise -f TroisBriques.ut TroisBriques.ncd 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TroisBriques_map.ncd TroisBriques.ngd TroisBriques.pcf 
+par -w -intstyle ise -ol high -t 1 TroisBriques_map.ncd TroisBriques.ncd TroisBriques.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TroisBriques.twx TroisBriques.ncd -o TroisBriques.twr TroisBriques.pcf 
+bitgen -intstyle ise -f TroisBriques.ut TroisBriques.ncd 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TroisBriques_map.ncd TroisBriques.ngd TroisBriques.pcf 
+par -w -intstyle ise -ol high -t 1 TroisBriques_map.ncd TroisBriques.ncd TroisBriques.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TroisBriques.twx TroisBriques.ncd -o TroisBriques.twr TroisBriques.pcf 
+bitgen -intstyle ise -f TroisBriques.ut TroisBriques.ncd 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TroisBriques_map.ncd TroisBriques.ngd TroisBriques.pcf 
+par -w -intstyle ise -ol high -t 1 TroisBriques_map.ncd TroisBriques.ncd TroisBriques.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TroisBriques.twx TroisBriques.ncd -o TroisBriques.twr TroisBriques.pcf 
+bitgen -intstyle ise -f TroisBriques.ut TroisBriques.ncd 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TroisBriques_map.ncd TroisBriques.ngd TroisBriques.pcf 
+par -w -intstyle ise -ol high -t 1 TroisBriques_map.ncd TroisBriques.ncd TroisBriques.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TroisBriques.twx TroisBriques.ncd -o TroisBriques.twr TroisBriques.pcf 
+bitgen -intstyle ise -f TroisBriques.ut TroisBriques.ncd 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TroisBriques_map.ncd TroisBriques.ngd TroisBriques.pcf 
+par -w -intstyle ise -ol high -t 1 TroisBriques_map.ncd TroisBriques.ncd TroisBriques.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TroisBriques.twx TroisBriques.ncd -o TroisBriques.twr TroisBriques.pcf 
+bitgen -intstyle ise -f TroisBriques.ut TroisBriques.ncd 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TroisBriques_map.ncd TroisBriques.ngd TroisBriques.pcf 
+par -w -intstyle ise -ol high -t 1 TroisBriques_map.ncd TroisBriques.ncd TroisBriques.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TroisBriques.twx TroisBriques.ncd -o TroisBriques.twr TroisBriques.pcf 
+bitgen -intstyle ise -f TroisBriques.ut TroisBriques.ncd 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TroisBriques_map.ncd TroisBriques.ngd TroisBriques.pcf 
+par -w -intstyle ise -ol high -t 1 TroisBriques_map.ncd TroisBriques.ncd TroisBriques.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TroisBriques.twx TroisBriques.ncd -o TroisBriques.twr TroisBriques.pcf 
+bitgen -intstyle ise -f TroisBriques.ut TroisBriques.ncd 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TroisBriques_map.ncd TroisBriques.ngd TroisBriques.pcf 
+par -w -intstyle ise -ol high -t 1 TroisBriques_map.ncd TroisBriques.ncd TroisBriques.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TroisBriques.twx TroisBriques.ncd -o TroisBriques.twr TroisBriques.pcf 
+bitgen -intstyle ise -f TroisBriques.ut TroisBriques.ncd 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TroisBriques_map.ncd TroisBriques.ngd TroisBriques.pcf 
+par -w -intstyle ise -ol high -t 1 TroisBriques_map.ncd TroisBriques.ncd TroisBriques.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TroisBriques.twx TroisBriques.ncd -o TroisBriques.twr TroisBriques.pcf 
+bitgen -intstyle ise -f TroisBriques.ut TroisBriques.ncd 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TroisBriques_map.ncd TroisBriques.ngd TroisBriques.pcf 
+par -w -intstyle ise -ol high -t 1 TroisBriques_map.ncd TroisBriques.ncd TroisBriques.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TroisBriques.twx TroisBriques.ncd -o TroisBriques.twr TroisBriques.pcf 
+bitgen -intstyle ise -f TroisBriques.ut TroisBriques.ncd 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TroisBriques_map.ncd TroisBriques.ngd TroisBriques.pcf 
+par -w -intstyle ise -ol high -t 1 TroisBriques_map.ncd TroisBriques.ncd TroisBriques.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TroisBriques.twx TroisBriques.ncd -o TroisBriques.twr TroisBriques.pcf 
+bitgen -intstyle ise -f TroisBriques.ut TroisBriques.ncd 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TroisBriques_map.ncd TroisBriques.ngd TroisBriques.pcf 
+par -w -intstyle ise -ol high -t 1 TroisBriques_map.ncd TroisBriques.ncd TroisBriques.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TroisBriques.twx TroisBriques.ncd -o TroisBriques.twr TroisBriques.pcf 
+bitgen -intstyle ise -f TroisBriques.ut TroisBriques.ncd 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TroisBriques_map.ncd TroisBriques.ngd TroisBriques.pcf 
+par -w -intstyle ise -ol high -t 1 TroisBriques_map.ncd TroisBriques.ncd TroisBriques.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TroisBriques.twx TroisBriques.ncd -o TroisBriques.twr TroisBriques.pcf 
+bitgen -intstyle ise -f TroisBriques.ut TroisBriques.ncd 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TroisBriques_map.ncd TroisBriques.ngd TroisBriques.pcf 
+par -w -intstyle ise -ol high -t 1 TroisBriques_map.ncd TroisBriques.ncd TroisBriques.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TroisBriques.twx TroisBriques.ncd -o TroisBriques.twr TroisBriques.pcf 
+bitgen -intstyle ise -f TroisBriques.ut TroisBriques.ncd 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TroisBriques_map.ncd TroisBriques.ngd TroisBriques.pcf 
+par -w -intstyle ise -ol high -t 1 TroisBriques_map.ncd TroisBriques.ncd TroisBriques.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TroisBriques.twx TroisBriques.ncd -o TroisBriques.twr TroisBriques.pcf 
+bitgen -intstyle ise -f TroisBriques.ut TroisBriques.ncd 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TroisBriques_map.ncd TroisBriques.ngd TroisBriques.pcf 
+par -w -intstyle ise -ol high -t 1 TroisBriques_map.ncd TroisBriques.ncd TroisBriques.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TroisBriques.twx TroisBriques.ncd -o TroisBriques.twr TroisBriques.pcf 
+bitgen -intstyle ise -f TroisBriques.ut TroisBriques.ncd 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TroisBriques_map.ncd TroisBriques.ngd TroisBriques.pcf 
+par -w -intstyle ise -ol high -t 1 TroisBriques_map.ncd TroisBriques.ncd TroisBriques.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TroisBriques.twx TroisBriques.ncd -o TroisBriques.twr TroisBriques.pcf 
+bitgen -intstyle ise -f TroisBriques.ut TroisBriques.ncd 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TroisBriques_map.ncd TroisBriques.ngd TroisBriques.pcf 
+par -w -intstyle ise -ol high -t 1 TroisBriques_map.ncd TroisBriques.ncd TroisBriques.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TroisBriques.twx TroisBriques.ncd -o TroisBriques.twr TroisBriques.pcf 
+bitgen -intstyle ise -f TroisBriques.ut TroisBriques.ncd 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TroisBriques_map.ncd TroisBriques.ngd TroisBriques.pcf 
+par -w -intstyle ise -ol high -t 1 TroisBriques_map.ncd TroisBriques.ncd TroisBriques.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TroisBriques.twx TroisBriques.ncd -o TroisBriques.twr TroisBriques.pcf 
+bitgen -intstyle ise -f TroisBriques.ut TroisBriques.ncd 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TroisBriques_map.ncd TroisBriques.ngd TroisBriques.pcf 
+par -w -intstyle ise -ol high -t 1 TroisBriques_map.ncd TroisBriques.ncd TroisBriques.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TroisBriques.twx TroisBriques.ncd -o TroisBriques.twr TroisBriques.pcf 
+bitgen -intstyle ise -f TroisBriques.ut TroisBriques.ncd 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim TroisBriques.ngc TroisBriques_synthesis.v 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim TroisBriques.ngc TroisBriques_synthesis.v 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TroisBriques_map.ncd TroisBriques.ngd TroisBriques.pcf 
+par -w -intstyle ise -ol high -t 1 TroisBriques_map.ncd TroisBriques.ncd TroisBriques.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TroisBriques.twx TroisBriques.ncd -o TroisBriques.twr TroisBriques.pcf 
+bitgen -intstyle ise -f TroisBriques.ut TroisBriques.ncd 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TroisBriques_map.ncd TroisBriques.ngd TroisBriques.pcf 
+par -w -intstyle ise -ol high -t 1 TroisBriques_map.ncd TroisBriques.ncd TroisBriques.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TroisBriques.twx TroisBriques.ncd -o TroisBriques.twr TroisBriques.pcf 
+bitgen -intstyle ise -f TroisBriques.ut TroisBriques.ncd 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TroisBriques_map.ncd TroisBriques.ngd TroisBriques.pcf 
+par -w -intstyle ise -ol high -t 1 TroisBriques_map.ncd TroisBriques.ncd TroisBriques.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TroisBriques.twx TroisBriques.ncd -o TroisBriques.twr TroisBriques.pcf 
+bitgen -intstyle ise -f TroisBriques.ut TroisBriques.ncd 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TroisBriques_map.ncd TroisBriques.ngd TroisBriques.pcf 
+par -w -intstyle ise -ol high -t 1 TroisBriques_map.ncd TroisBriques.ncd TroisBriques.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TroisBriques.twx TroisBriques.ncd -o TroisBriques.twr TroisBriques.pcf 
+bitgen -intstyle ise -f TroisBriques.ut TroisBriques.ncd 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TroisBriques_map.ncd TroisBriques.ngd TroisBriques.pcf 
+par -w -intstyle ise -ol high -t 1 TroisBriques_map.ncd TroisBriques.ncd TroisBriques.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TroisBriques.twx TroisBriques.ncd -o TroisBriques.twr TroisBriques.pcf 
+bitgen -intstyle ise -f TroisBriques.ut TroisBriques.ncd 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TroisBriques_map.ncd TroisBriques.ngd TroisBriques.pcf 
+par -w -intstyle ise -ol high -t 1 TroisBriques_map.ncd TroisBriques.ncd TroisBriques.pcf 
+bitgen -intstyle ise -f TroisBriques.ut TroisBriques.ncd 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TroisBriques_map.ncd TroisBriques.ngd TroisBriques.pcf 
+par -w -intstyle ise -ol high -t 1 TroisBriques_map.ncd TroisBriques.ncd TroisBriques.pcf 
+bitgen -intstyle ise -f TroisBriques.ut TroisBriques.ncd 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TroisBriques_map.ncd TroisBriques.ngd TroisBriques.pcf 
+par -w -intstyle ise -ol high -t 1 TroisBriques_map.ncd TroisBriques.ncd TroisBriques.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TroisBriques.twx TroisBriques.ncd -o TroisBriques.twr TroisBriques.pcf 
+bitgen -intstyle ise -f TroisBriques.ut TroisBriques.ncd 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TroisBriques_map.ncd TroisBriques.ngd TroisBriques.pcf 
+par -w -intstyle ise -ol high -t 1 TroisBriques_map.ncd TroisBriques.ncd TroisBriques.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TroisBriques.twx TroisBriques.ncd -o TroisBriques.twr TroisBriques.pcf 
+bitgen -intstyle ise -f TroisBriques.ut TroisBriques.ncd 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TroisBriques_map.ncd TroisBriques.ngd TroisBriques.pcf 
+par -w -intstyle ise -ol high -t 1 TroisBriques_map.ncd TroisBriques.ncd TroisBriques.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TroisBriques.twx TroisBriques.ncd -o TroisBriques.twr TroisBriques.pcf 
+bitgen -intstyle ise -f TroisBriques.ut TroisBriques.ncd 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TroisBriques_map.ncd TroisBriques.ngd TroisBriques.pcf 
+par -w -intstyle ise -ol high -t 1 TroisBriques_map.ncd TroisBriques.ncd TroisBriques.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TroisBriques.twx TroisBriques.ncd -o TroisBriques.twr TroisBriques.pcf 
+bitgen -intstyle ise -f TroisBriques.ut TroisBriques.ncd 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TroisBriques_map.ncd TroisBriques.ngd TroisBriques.pcf 
+par -w -intstyle ise -ol high -t 1 TroisBriques_map.ncd TroisBriques.ncd TroisBriques.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TroisBriques.twx TroisBriques.ncd -o TroisBriques.twr TroisBriques.pcf 
+bitgen -intstyle ise -f TroisBriques.ut TroisBriques.ncd 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TroisBriques_map.ncd TroisBriques.ngd TroisBriques.pcf 
+par -w -intstyle ise -ol high -t 1 TroisBriques_map.ncd TroisBriques.ncd TroisBriques.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TroisBriques.twx TroisBriques.ncd -o TroisBriques.twr TroisBriques.pcf 
+bitgen -intstyle ise -f TroisBriques.ut TroisBriques.ncd 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TroisBriques_map.ncd TroisBriques.ngd TroisBriques.pcf 
+par -w -intstyle ise -ol high -t 1 TroisBriques_map.ncd TroisBriques.ncd TroisBriques.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TroisBriques.twx TroisBriques.ncd -o TroisBriques.twr TroisBriques.pcf 
+bitgen -intstyle ise -f TroisBriques.ut TroisBriques.ncd 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TroisBriques_map.ncd TroisBriques.ngd TroisBriques.pcf 
+par -w -intstyle ise -ol high -t 1 TroisBriques_map.ncd TroisBriques.ncd TroisBriques.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TroisBriques.twx TroisBriques.ncd -o TroisBriques.twr TroisBriques.pcf 
+bitgen -intstyle ise -f TroisBriques.ut TroisBriques.ncd 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TroisBriques_map.ncd TroisBriques.ngd TroisBriques.pcf 
+par -w -intstyle ise -ol high -t 1 TroisBriques_map.ncd TroisBriques.ncd TroisBriques.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TroisBriques.twx TroisBriques.ncd -o TroisBriques.twr TroisBriques.pcf 
+bitgen -intstyle ise -f TroisBriques.ut TroisBriques.ncd 
+xst -intstyle ise -ifn "/export/homes/yli1/TroisBriques/work/TroisBriques.xst" -ofn "/export/homes/yli1/TroisBriques/work/TroisBriques.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /export/homes/yli1/TroisBriques/basys2.ucf -p xc3s100e-cp132-5 TroisBriques.ngc TroisBriques.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TroisBriques_map.ncd TroisBriques.ngd TroisBriques.pcf 
+par -w -intstyle ise -ol high -t 1 TroisBriques_map.ncd TroisBriques.ncd TroisBriques.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TroisBriques.twx TroisBriques.ncd -o TroisBriques.twr TroisBriques.pcf 
+bitgen -intstyle ise -f TroisBriques.ut TroisBriques.ncd 

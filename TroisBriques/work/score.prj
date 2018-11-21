@@ -1,0 +1,5 @@
+verilog work "../Digit.v"
+verilog work "../TimeUnit.v"
+verilog work "../Number.v"
+verilog work "../Button.v"
+verilog work "../score.v"
